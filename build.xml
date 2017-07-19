@@ -42,8 +42,8 @@
 
 
 
-        <target name="Main" depends="compile, jar">
-        <description>Main target</description>
-        </target>
-        </project>
+
+
+
+
 
