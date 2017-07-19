@@ -23,6 +23,7 @@
         <target name="makedir">
         <mkdir dir="${build.dir}" />
         <mkdir dir="${dist.dir}" />
+	</target>
 
         <!-- Compiles the java code (including the usages of library for JUnit -->
         <target name="compile" depends="clean, makedir">
@@ -31,15 +32,15 @@
 	</javac>
         </target>
 
-        <!--Creates the deployable jar file -->
+      
 
-        <target name="jar" depends="compile">
-       <jar destfile="${dist.dir}\rectangle.jar" basedir="${build.dir}">
-        <manifest>
-        <attribute name="Main-Class" value="Rectangulator" />
-        </manifest>
-        </jar>
-        </target>
+     
+
+
+
+
+
+
 
         <target name="Main" depends="compile, jar">
         <description>Main target</description>
